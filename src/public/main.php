@@ -2,7 +2,7 @@
 
 session_start();
 
-if (empty($_SESSION['user_id'])) {
+if (!isset($_SESSION['user_id'])) {
     header("Location: /get_login.php");
 } else {
     $pdo = new PDO("pgsql:host=db; port=5432; dbname=dbname", "dbuser", "dbpwd");
@@ -11,7 +11,7 @@ if (empty($_SESSION['user_id'])) {
     ?>
 
     <div class="container">
-  <h3>Catalog</h3>
+  <h3>Auto</h3>
   <div class="card-deck">
       <?php foreach ($result as $product):?>
     <div class="card text-center">
