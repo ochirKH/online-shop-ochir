@@ -1,14 +1,14 @@
 <div class="container">
     <div class="login-container">
         <h1>Login</h1>
-        <form action="post_login.php" method="POST" class="form-login">
+        <form action="post_login.php" method="POST" >
             <div class="textfield">
-                <label for="email"> Email</label>
-                <input type="email" name="name" placeholder="Email" id="email">
+                <label for="email"> email</label>
+                <input class='email' type="email" name="email" placeholder="email" id="email">
             </div>
             <div class="textfield">
-                <label for="password"> Password</label>
-                <input type="password" name="password" placeholder="password" id="password">
+                <label for="password"> password</label>
+                <input class='email' type="password" name="password" placeholder="password" id="password">
             </div>
             <a class="forgot-password" href="#">Esqueceu sua senha?</a>
             <button class="btn-login">Login </button>
